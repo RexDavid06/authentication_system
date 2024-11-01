@@ -28,7 +28,7 @@
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Have an account? Login<a href="/signin"> Here</a></h3>
                 {% for message in messages %}
-                <small style="color: red;"> {{message}}</small>
+                <small> {{message}}</small>
                 {% endfor %}
 		      	<form action="#" class="signin-form" method="post">
                     {% csrf_token %}

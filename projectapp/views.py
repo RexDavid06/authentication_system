@@ -15,18 +15,18 @@ def signup(request):
         confirm_password = request.POST['confirm_password']
         if password == confirm_password:
             if User.objects.filter(username=username).exists():
-                messages.info(request, 'This username already exists')
+                messages.error(request, 'This username already exists')
                 return render(request, 'signup.html')
             elif User.objects.filter(email=email).exists():
-                messages.info(request, 'This email already exists')
+                messages.error(request, 'This email already exists')
                 return render( request, 'signup.html')
             else:
                 user = User.objects.create_user(username=username, email=email, password=password, )
                 user.save()
                 messages.success(request, 'Your acount has been created successfully.')
-                return render(request, 'signin.html')
+                return redirect('signin')
         else:
-            messages.info(request, 'Unmatched passwords')
+            messages.error(request, 'Unmatched passwords')
             return redirect('signup.html')
     else:
         return render(request, 'signup.html')
