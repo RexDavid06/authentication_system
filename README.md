@@ -6,7 +6,5 @@ And the user, when signed in, will have he's of her dashboard.
 tho i haven't added the dashboadr template...the template rendering in the dashboard is a "coming soon template from bootstrap"
 And all the templates i used, were gotten from bootstrapmadeit.
 
-And i have issue i haven't rectified yet which is, the user can signup and be redirected to the signin page and after signing in there'll be an error "MultiValueDictKeyError"/signup/'firstname' but the user is been saved in the database. 
-If the user goes back to the signup page and click the signin  link, and sign in from there, the user will be logged in and be able to view the blog..
-
-And please any one who has an idea of what i should do, could help me.
+And i spoke about an error that i had. I just found the bug and this is the fixed version of the website.
+the  mistake was thatwhen i defined the signup function i was suppose to redirect it to the login page, but i rendered it..
