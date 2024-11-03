@@ -7,4 +7,4 @@ tho i haven't added the dashboadr template...the template rendering in the dashb
 And all the templates i used, were gotten from bootstrapmadeit.
 
 And i spoke about an error that i had. I just found the bug and this is the fixed version of the website.
-the  mistake was thatwhen i defined the signup function i was suppose to redirect it to the login page, but i rendered it..
+the  mistake was that when i defined the signup function i was suppose to redirect it to the login page, but i rendered it..
