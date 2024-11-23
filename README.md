@@ -8,3 +8,6 @@ And all the templates i used, were gotten from bootstrapmadeit.
 
 And i spoke about an error that i had. I just found the bug and this is the fixed version of the website.
 the  mistake was that when i defined the signup function i was suppose to redirect it to the login page, but i rendered it..
+
+# Update
+So i just Added a user restriction, logged in users will be unable to access the sign-in and sign-up page
